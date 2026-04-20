@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByteMind — AI &amp; Machine Learning Blog</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- READING PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <span class="nav-logo">BYTE<span class="accent">MIND</span></span>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">About</a>
+        </div>
+        <span class="nav-tag">AI &amp; ML</span>
+        <button id="theme-toggle">◑ Dark</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-label">FEATURED BLOG</div>
+        <h1 class="hero-title">The Machines<br>Are Learning.<br>Are You?</h1>
+        <p class="hero-sub">
+            Deep dives into artificial intelligence, neural networks, and the
+            algorithms reshaping our world — written for curious minds.
+        </p>
+        <div class="hero-meta">
+            <span class="author-dot"></span>
+            <span>By <strong>Miras A.</strong></span>
+            <span class="divider">·</span>
+            <span id="hero-date"></span>
+        </div>
+    </div>
+    <div class="hero-graphic">
+        <div class="neural-grid" id="neural"></div>
+    </div>
+</header>
+
+<!-- SCROLLING ISSUE STRIP -->
+<div class="issue-strip">
+    <div class="strip-track">
+        <span>VOL. 01</span><span class="sep">///</span>
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="sep">///</span>
+        <span>MACHINE LEARNING</span><span class="sep">///</span>
+        <span>NEURAL NETWORKS</span><span class="sep">///</span>
+        <span>DEEP LEARNING</span><span class="sep">///</span>
+        <span>NLP</span><span class="sep">///</span>
+        <span>VOL. 01</span><span class="sep">///</span>
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="sep">///</span>
+        <span>MACHINE LEARNING</span><span class="sep">///</span>
+        <span>NEURAL NETWORKS</span><span class="sep">///</span>
+    </div>
+</div>
+
+<!-- POSTS GRID -->
+<main class="posts-section">
+    <div class="section-header">
+        <h2 class="section-title">Latest Articles</h2>
+        <span class="section-count">3 posts this month</span>
+    </div>
+
+    <div class="posts-grid">
+
+        <!-- POST 1 — large -->
+        <article class="post-card post-large card-blue">
+            <div class="card-number">01</div>
+            <div class="card-tag">Neural Networks</div>
+            <h3 class="card-title">How GPT Actually Works: A Visual Guide for Beginners</h3>
+            <p class="card-excerpt">
+                Everyone talks about large language models, but very few people understand
+                what actually happens inside them. We break down transformers, attention
+                heads, and token prediction into plain English — no PhD required.
+            </p>
+            <div class="card-footer">
+                <span class="read-time">8 min read</span>
+                <span class="post-date">April 12, 2025</span>
+                <a class="read-btn" href="#" data-post="1">Read →</a>
+            </div>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="post-card card-coral">
+            <div class="card-number">02</div>
+            <div class="card-tag">Machine Learning</div>
+            <h3 class="card-title">Overfitting Explained: Why Your Model Aces Training but Fails in Real Life</h3>
+            <p class="card-excerpt">
+                A model that memorises its training data is about as useful as a student
+                who memorises answers without understanding the subject. Here is how to
+                spot overfitting and actually fix it.
+            </p>
+            <div class="card-footer">
+                <span class="read-time">6 min read</span>
+                <span class="post-date">March 28, 2025</span>
+                <a class="read-btn" href="#" data-post="2">Read →</a>
+            </div>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="post-card card-green">
+            <div class="card-number">03</div>
+            <div class="card-tag">AI Ethics</div>
+            <h3 class="card-title">Bias in AI: When the Algorithm Discriminates</h3>
+            <p class="card-excerpt">
+                From hiring tools to facial recognition, AI systems have shown troubling
+                patterns of bias. We explore where bias comes from, why it is so hard to
+                remove, and what researchers are doing about it.
+            </p>
+            <div class="card-footer">
+                <span class="read-time">7 min read</span>
+                <span class="post-date">March 10, 2025</span>
+                <a class="read-btn" href="#" data-post="3">Read →</a>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+    <div class="about-inner">
+        <div class="about-left">
+            <span class="about-label">ABOUT THE AUTHOR</span>
+            <h3 class="about-name">Miras Aspenov</h3>
+            <p class="about-role">Student Researcher · Information Systems</p>
+        </div>
+        <p class="about-bio">
+            I’m interested in Information Systems because I like how technology and data work together to solve real-life problems. It’s cool to learn how systems help businesses stay organized and make better decisions. I want to get better at this and maybe build useful systems in the future.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span class="nav-logo small">BYTE<span class="accent">MIND</span></span>
+        <p class="deploy-line">Last Deployment: <span id="deploy-date"></span></p>
+        <p class="footer-copy">Built and deployed automatically with GitHub Actions · YOUR NAME</p>
+    </div>
+</footer>
+
+<!-- ARTICLE MODAL -->
+<div id="modal-overlay">
+    <div id="modal-panel">
+        <div id="modal-topbar">
+            <span id="modal-tag"></span>
+            <button id="modal-close">✕ Close</button>
+        </div>
+        <div id="modal-scroll">
+            <p id="modal-date"></p>
+            <h2 id="modal-title"></h2>
+            <div id="modal-meta">
+                <span id="modal-readtime"></span>
+                <span>·</span>
+                <span>By <strong>Miras A.</strong></span>
+            </div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
